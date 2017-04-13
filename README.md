@@ -15,11 +15,9 @@ Finally, I will present a variable selection framework we developed, which is de
 
 ## Installation instructions
 
-**NOTEBOOKS HERE**: https://www.dropbox.com/s/wzxo32zv86tt5ou/notebookx.zip?dl=0
-
 I strongly suggest using **miniconda** so that you can create a virtual environment and pack everything in a single folder which you can nuke at will as soon as the tutorial is over in case you're not satisfied :)
 
-The installation should take a few minutes. I suggest you to do it _before_ the tutorial as 30 people downloading stuff with the connection provided by the hotel we will be at might cause some problems.
+The installation should take a few minutes.
 
 ### Linux and OSX
 
@@ -47,11 +45,14 @@ $ bash Miniconda3-latest-Linux-x86_64.sh
 `(palladio) $ pip install palladio`  
 `(palladio) $ conda install jupyter ipython`
 
+It is important that you install those packages **after** you have created _and_ activated the conda environment, otherwise it might use the default jupyter, which probably will lack part of the required packages.
+
 ### Windows
 
 I assume that you installed anaconda Navigator.
 
-Create an environment specifying Python version 2.*.
+Create an environment specifying Python version 2.\*.
+
 Install packages `scikit-learn` (which should automatically install numpy and scipy), `joblib`, `seaborn` and `jupyter` using the tool from the navigator.
 
 Open a terminal (play button -> open terminal) and install `palladio` using `pip install palladio`.
@@ -59,5 +60,3 @@ Open a terminal (play button -> open terminal) and install `palladio` using `pip
 Done! You should be good to go. In order to check if everything's good, open a jupyter notebook (from the shell just enter `jupyter-notebook`, a new browser window should appear) and try to import `palladio`. If you don't get any error messages, it's done! You might get a warning about a missing mpi4py library, don't worry about it.
 
 If you get stuck for any reason during the installation process feel free to contact me! I'm actively developing the framework and we're still working on the deployment phase so we're more than happy to receive feedback.
-
-See you soon!
